@@ -1,17 +1,42 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+// import myIcon from './download.png';
+import Header from './Header';
+import Footer from './Footer';
+import MainComponent from './MainComponent';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//  var React= require('react');
+//  var ReactDOM= require('react-dom')
+
+
+
+
+
+
+
+function Page() {
+    return (
+        <div>
+            <Header />
+            <MainComponent />
+            <img src="./images/palpasa_cafe.jpg" alt="Palpasa"  />
+            <Footer />
+        </div>
+    )
+}
+
+ReactDOM.render(<Page />, document.getElementById("root"));
+
+    // const date = new Date();
+    // const hours = new date.getHours()
+
+    // let timeOfDay;
+
+    // if(hours<12){
+    //     timeOfDay="Morning";
+    // }else if(hours>=12 && hours<17){
+    //    timeOfDay="Afternoon"
+    // }else{
+    //     timeOfDay="night"
+    // }
